@@ -19,7 +19,7 @@
 
 * Download do Ruby + devkit em: HTTP://RUBYINSTALLER.ORG/DOWNLOADS/
 
-* Ao executar a instalação marcar as opções:
+- Ao executar a instalação marcar as opções:
  - "Add Ruby executables to your PATH"*
  - "Associate .rb and .rbw files with this Ruby installation"*
  - "Use UTF-8 as default external encoding"*
@@ -51,17 +51,18 @@ gem install bundler
 
 4. **Instalação dos Plugins Ruby | Cucumber | VSCode Icons no VSCode**
 
-* No VSCode clicar no ícone *"Extensions"*
+- No VSCode clicar no ícone *"Extensions"*
  - Digitar 'Ruby' no campo de busca
  - Clicar na opção *"Install"* da opção com :star: 4.5
- 
+ >
  
  - Digitar 'Gherkin Indent' no campo de busca
  - Clicar na opção *"Install"* da opção com :star: 3
- 
+ >
  
  - Digitar 'vscode-icons' no campo de busca
  - Clicar na opção *"Install"* da opção com :star: 5
  - Ativar o vscode-icons no VSCode
+ >
  
  <continua...>
