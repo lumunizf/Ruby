@@ -17,18 +17,18 @@
 
 1. **Instalação do Ruby**
 
-- Download do Ruby + devkit em: HTTP://RUBYINSTALLER.ORG/DOWNLOADS/
+- Download do Ruby + devkit em: https://rubyinstaller.org/downloads/
 
 - Ao executar a instalação marcar as opções:
-  - "Add Ruby executables to your PATH"*
-  - "Associate .rb and .rbw files with this Ruby installation"*
-  - "Use UTF-8 as default external encoding"*
+  - *"Add Ruby executables to your PATH"*
+  - *"Associate .rb and .rbw files with this Ruby installation"*
+  - *"Use UTF-8 as default external encoding"*
  
 - Acionar a tecla ENTER no prompt que se abre após a instalação.
 
 - E acionar a tecla ENTER novamente para finalizar a instalação.
 
-- Digitar o comando abaixo no terminal para confirmar que a instalação ocorreu com sucesso:
+- Digitar o comando abaixo no terminal para confirmar a instalação:
 
 ```
 ruby -v
@@ -46,7 +46,7 @@ gem install bundler
 
 3. **Instalação do VSCode**
 
-* Download do VSCode em: HTTPS://CODE.VISUALSTUDIO.COM/DOWNLOAD
+* Download do VSCode em: https://code.visualstudio.com/download
 
 
 4. **Instalação dos Plugins Ruby | Cucumber | VSCode Icons no VSCode**
