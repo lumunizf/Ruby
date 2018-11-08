@@ -93,10 +93,9 @@ cucumber --init
 ```
 
 - O comando acima criará as seguintes pastas:
-
- - features
- - step definitions
- - support
+  - features
+  - step definitions
+  - support
  
 - Criar manualmente a pasta *"specs"* dentro da pasta *"features"*.
 
