@@ -7,17 +7,18 @@
  
 ### Pré-Requisitos
 
- - [x] Ruby instalado.
- - [x] GEM Bundler instalada.
- - [x] VSCode + Plugins instalados.
- - [x] Cucumber instalado.
- - [x] Capybara instalado.
+ * Ruby instalado.
+ * GEMs: Bundler | Cucumber | RSPEC instaladas.
+ * VSCode instalado.
+ * Plugins do VSCode: Ruby | Gherkin Indent | VSCode Icons instalados.
+ * Cucumber instalado.
+ * Capybara instalado.
 
 ### Configuração do ambiente (Windows)
 
 1. **Instalação do Ruby**
 
-- Download do Ruby + devkit em: https://rubyinstaller.org/downloads/
+- Download do [Ruby + devkit](https://rubyinstaller.org/downloads/)
 
 - Ao executar a instalação marcar as opções:
   - *"Add Ruby executables to your PATH"*
@@ -46,10 +47,10 @@ gem install bundler
 
 3. **Instalação do VSCode**
 
-* Download do VSCode em: https://code.visualstudio.com/download
+* Download do [VSCode](https://code.visualstudio.com/download)
 
 
-4. **Instalação dos Plugins Ruby | Cucumber | VSCode Icons no VSCode**
+4. **Instalação dos Plugins Ruby | Gherkin Indent | VSCode Icons no VSCode**
 
 - No VSCode clicar no ícone *"Extensions"*
  - Digitar 'Ruby' no campo de busca
@@ -65,4 +66,66 @@ gem install bundler
  - Ativar o vscode-icons no VSCode
  >
  
+5. **Instalação da GEM Cucumber**
+ 
+* No terminal digitar o comando:
+ 
+ ```
+gem install cucumber
+```
+
+6. **Instalação da GEM RSPEC**
+ 
+* No terminal digitar o comando:
+ 
+ ```
+gem install rspec
+```
+
+7. **Inicialização do Cucumber**
+
+- Criar a pasta *"tests"* que será o diretório raiz do projeto cucumber dentro do ambiente de testes.
+
+- Localizar via terminal a pasta *"tests"* e digitar o comando:
+ 
+ ```
+cucumber --init
+```
+
+- O comando acima criará as seguintes pastas:
+
+ - features
+ - step definitions
+ - support
+ 
+- Criar manualmente a pasta *"specs"* dentro da pasta *"features"*.
+
+- Criar manualmente o arquivo *"gemfile"* dentro da pasta *"tests"*.
+
+- No arquivo *"gemfile"* digitar:
+
+ ```
+source 'http://rubygems.org'
+
+gem 'cucumber'
+gem 'rspec'
+```
+
+- Após salvar o arquivo *"gemfile"* digitar no terminal:
+
+ ```
+bundler install
+```
+
+> O comando acima instala o cucumber e suas respectivas dependências no ambiente de testes.
+
+
+- Assim que a instalação do cucumber e suas dependências estiver finalizada, atualizar o arquivo *"env.rb"* (pasta support), digitando:
+
+ ```
+require 'cucumber'
+```
+
+
+
  <continua...>
