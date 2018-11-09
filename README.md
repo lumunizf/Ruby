@@ -125,6 +125,6 @@ bundler install
 require 'cucumber'
 ```
 
-
+> Para rodar os testes, basta acessar a pasta *"Tests"* via terminal e digitar o comando **cucumber**
 
  <continua...>
