@@ -13,6 +13,8 @@
  * Plugins do VSCode: Ruby | Gherkin Indent | VSCode Icons instalados.
  * Cucumber instalado.
  * Capybara instalado.
+ * Drivers ChromeDriver e GeckoDriver instalados.
+ * Selenium Webdriver instalado.
 
 ### Configuração do ambiente (Windows)
 
@@ -82,7 +84,7 @@ gem install cucumber
 gem install rspec
 ```
 
-7. **Inicialização do Cucumber**
+7. **Configuração do Cucumber**
 
 - Criar a pasta *"tests"* que será o diretório raiz do projeto cucumber dentro do ambiente de testes.
 
@@ -119,12 +121,80 @@ bundler install
 > O comando acima instala o cucumber e suas respectivas dependências no ambiente de testes.
 
 
-- Assim que a instalação do cucumber e suas dependências estiver finalizada, atualizar o arquivo *"env.rb"* (pasta support), digitando:
+- Quando finalizar a instalação do cucumber e suas dependências, atualizar o arquivo *"env.rb"* da pasta support:
 
  ```
 require 'cucumber'
 ```
 
 > Para rodar os testes, basta acessar a pasta *"Tests"* via terminal e digitar o comando **cucumber**
+
+
+8. **Instalação do Capybara**
+
+* Criar um novo projeto com a mesma estrutura de pastas descrita no passo 7:
+
+* No terminal digitar o comando:
+ 
+ ```
+gem install capybara
+```
+
+* Ao finalizar a instalação do capybara e suas dependências, atualizar o arquivo *"env.rb"* da pasta support:
+
+ ```
+require 'capybara/cucumber'
+```
+
+* Atualizar o arquivo *"gemfile"* dentro da pasta *"tests"*:
+
+ ```
+source 'http://rubygems.org'
+
+gem 'capybara'
+gem 'cucumber'
+gem 'rspec'
+gem 'selenium-webdriver'
+```
+
+> Não será necessário instalar a GEM RSPEC, pois já a instalamos no passo 6.
+
+
+9. **Instalação dos drivers ChromeDriver e GeckoDriver**
+
+* Download do [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/home)
+
+* Download do [GeckoDriver](https://github.com/mozilla/geckodriver/releases)
+
+* Extrair os arquivos dentro do diretório C:\Windows
+
+
+10. **Instalação do Selenium Webdriver**
+
+* Acessar a pasta raiz do projeto *"tests"* via terminal e digitar o comando:
+
+ ```
+bundle install
+```
+
+* Ao finalizar a instalação de todas as gems necessárias para o projeto e suas dependências, atualizar o arquivo *"env.rb"* da pasta support:  
+
+ ```
+require 'selenium-webdriver'
+```
+
+11. **Configurações padrão do Capybara**
+
+* Atualizar o arquivo *"env.rb"* da pasta support:
+
+ ```
+Capybara.configure do |config|
+    config.default_driver = :selenium_chrome
+    config.app.host = 'https://automacaocombatista.herokuapp.com'
+    config.default_max_wait_time = 5
+end
+```
+
+
 
  <continua...>
