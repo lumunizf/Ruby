@@ -6,7 +6,7 @@ Capybara.configure do |config|
     # Configuração para que o driver padrão seja o chrome
     config.default_driver = :selenium_chrome
     # Configuração para a url padrão na automação
-    config.app.host = 'https://automacaocombatista.herokuapp.com'
+    config.app_host = 'https://automacaocombatista.herokuapp.com'
     # Configuração do tempo padrão para aguardar o carregamento dos elementos na tela (contagem por segundos)
-    config.default_max_wait_time = 5
+    config.default_max_wait_time = 10
 end
