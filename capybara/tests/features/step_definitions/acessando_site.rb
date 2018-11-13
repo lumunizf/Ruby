@@ -1,5 +1,6 @@
 Quando("acesso a url") do
   visit '/treinamento/home'
+  sleep(5)
 end
   
 Então("verifico se estou na página correta.") do
