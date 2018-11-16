@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 Quando("acesso a url") do
   visit '/treinamento/home'
   sleep(5)

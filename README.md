@@ -13,7 +13,7 @@
  * Plugins do VSCode: Ruby | Gherkin Indent | VSCode Icons instalados.
  * Cucumber instalado.
  * Capybara instalado.
- * Drivers ChromeDriver e GeckoDriver instalados.
+ * Drivers ChromeDriver, GeckoDriver e MicrosoftWebDriver instalados.
  * Selenium Webdriver instalado.
 
 ### Configuração do ambiente (Windows)
@@ -166,7 +166,9 @@ gem 'selenium-webdriver'
 
 * Download do [GeckoDriver](https://github.com/mozilla/geckodriver/releases)
 
-* Extrair os arquivos dentro do diretório C:\Windows
+* Download do [MicrosoftWebDriver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/)
+
+* Extrair os arquivos dentro do diretório C:\RubyXX\bin
 
 
 10. **Instalação do Selenium Webdriver**
