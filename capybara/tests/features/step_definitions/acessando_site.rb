@@ -1,4 +1,4 @@
-# encoding: utf-8
+# encoding: UTF-8
 
 Quando("acesso a url") do
   visit '/treinamento/home'
