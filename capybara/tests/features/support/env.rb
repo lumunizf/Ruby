@@ -1,10 +1,5 @@
-require 'capybara'
 require 'capybara/cucumber'
 require 'selenium-webdriver'
-
-Capybara.register_driver :selenium do |app|
-    Capybara::Selenium::Driver.new(app, :browser => :chrome)
-end
 
 Capybara.configure do |config|
     # selenium      selenium_chrome     selenium_chrome_healess
@@ -13,5 +8,5 @@ Capybara.configure do |config|
     # Configuração para a url padrão na automação
     config.app_host = 'https://automacaocombatista.herokuapp.com'
     # Configuração do tempo padrão para aguardar o carregamento dos elementos na tela (contagem por segundos)
-    config.default_max_wait_time = 10
+    config.default_max_wait_time = 5
 end
