@@ -1,5 +1,5 @@
 # language: pt
-# encoding: UTF-8
+# encoding: utf-8
 
 @acessando_url
 Funcionalidade: Acessar uma url
