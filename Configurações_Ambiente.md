@@ -1,10 +1,5 @@
-# Ruby
+# Configurações do ambiente de automação
 
-## Exercícios dos cursos:
-
- - [x] Ruby para iniciantes.
- - [x] Automação de teste com Ruby + Cucumber + Capybara.
- 
 ## Pré-Requisitos
 
  * Ruby instalado.
@@ -16,7 +11,7 @@
  * Drivers ChromeDriver, GeckoDriver e MicrosoftWebDriver instalados.
  * Selenium Webdriver instalado.
 
-## Configuração do ambiente (Windows)
+## Passo a passo da configuração do ambiente para o Windows 10
 
 ### 1. Instalação do Ruby
 
