@@ -11,7 +11,7 @@
  * Drivers ChromeDriver, GeckoDriver e MicrosoftWebDriver instalados.
  * Selenium Webdriver instalado.
 
-## Passo a passo da configuração do ambiente para o Windows 10
+## Configuração do ambiente para o Windows 10
 
 ### 1. Instalação do Ruby
 
