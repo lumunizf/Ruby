@@ -8,7 +8,7 @@
  * Plugins do VSCode: Ruby | Gherkin Indent | VSCode Icons instalados.
  * Cucumber instalado.
  * Capybara instalado.
- * Drivers ChromeDriver, GeckoDriver e MicrosoftWebDriver instalados.
+ * Drivers ChromeDriver, GeckoDriver e IEDriverServer.
  * Selenium Webdriver instalado.
 
 ## Configuração do ambiente para o Windows 10
@@ -47,7 +47,7 @@ gem install bundler
 * Download do [VSCode](https://code.visualstudio.com/download)
 
 
-### 4. Instalação dos Plugins Ruby | Gherkin Indent | VSCode Icons no VSCode
+### 4. Instalação no VSCode dos Plugins Ruby | Gherkin Indent | VSCode Icons
 
 - No VSCode clicar no ícone *"Extensions"*
  - Digitar 'Ruby' no campo de busca
@@ -155,7 +155,7 @@ gem 'selenium-webdriver'
 > Não será necessário instalar a GEM RSPEC, pois já a instalamos no passo 6.
 
 
-### 9. Instalação dos drivers ChromeDriver e GeckoDriver
+### 9. Download dos drivers ChromeDriver | GeckoDriver | IEDriverServer
 
 * Download do [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/home)
 
